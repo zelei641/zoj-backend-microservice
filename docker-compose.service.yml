@@ -3,7 +3,7 @@ services:
   yuoj-backend-gateway:
     container_name: yuoj-backend-gateway
     build:
-      context: ./yuoj-backend-gateway
+      context: zoj-backend-gateway
       dockerfile: Dockerfile
     ports:
       - "8101:8101"
@@ -13,7 +13,7 @@ services:
   yuoj-backend-user-service:
     container_name: yuoj-backend-user-service
     build:
-      context: ./yuoj-backend-user-service
+      context: zoj-backend-user-service
       dockerfile: Dockerfile
     ports:
       - "8102:8102"
@@ -25,7 +25,7 @@ services:
   yuoj-backend-question-service:
     container_name: yuoj-backend-question-service
     build:
-      context: ./yuoj-backend-question-service
+      context: zoj-backend-question-service
       dockerfile: Dockerfile
     ports:
       - "8103:8103"
